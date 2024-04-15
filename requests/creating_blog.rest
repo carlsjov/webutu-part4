@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-    "author": "Testi Antero",
-    "title": "Eka bloggaus",
-    "url": "testibloggaus",
-    "likes": 37
+    "author": "Testi Kolmonen Antero",
+    "title": "Kolmas bloggaus",
+    "url": "testibloggaus v3",
+    "likes": 39
 }
