@@ -41,6 +41,20 @@ describe('tests with supertest', () => {
         const blogsAfter = await helper.blogsInDb()
         expect(blogsAfter).toHaveLength(helper.initialBlogs.length + 1)
     })
+
+    test('deleting first one', async () => {
+        const blogsFirst = await helper.blogsInDb()
+        const firstId = blogsFirst[0]
+        
+        await api.delete(`/api/blogs/${firstId.id}`)
+
+        const blogsAfter = await helper.blogsInDb()
+        expect(blogsAfter).toHaveLength(helper.initialBlogs.length - 1)
+
+        const blogIdsAfter = blogsAfter.map(r => r.id)
+
+        expect(blogIdsAfter).not.toContain(firstId.id)
+    })
 })
 
 afterAll(async () => {
