@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/661eeeaed1cba801d23f1af1
+Content-Type: application/json
+
+{
+    "author": "Testi Nelonen Antero",
+    "title": "Neljäs bloggaus",
+    "url": "testibloggaus v4",
+    "likes": 41
+}
