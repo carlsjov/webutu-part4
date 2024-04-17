@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhZXNqIiwiaWQiOiI2NjFmZjIxMzRiNWUxMWVjYzBiMTVlOGUiLCJpYXQiOjE3MTMzNzI4MzB9.q3wE8x2ibx0f5Mx8LWqL-3Cnz2DJLvLGmtHb7ee33jQ
 
 {
-    "author": "Testi Kakkonen Antero",
-    "title": "Kakkonen bloggaus",
-    "url": "testibloggaus v2",
-    "likes": 2,
-    "user": "661ff2134b5e11ecc0b15e8e"
+    "author": "Testi Kolmonen Autentikointi",
+    "title": "Kolmas bloggaus tokenilla",
+    "url": "testibloggaus v3",
+    "likes": 3
 }
